@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/vendors.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Tu Brothers Academy</title>
+  
+  <link rel="icon" type="image/png" href="img/general/logo.png"/>
+  
+</head>
+
+<body class="preloader-visible" data-barba="wrapper">
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div class="preloader__bg"></div>
+  </div>
+  <!-- preloader end -->
+
+
+  <main class="main-content  ">
+
+    <header data-anim="fade" data-add-bg="bg-dark-1" class="header -type-1 js-header">
+
+
+      <div class="header__container">
+        <div class="row justify-between items-center">
+
+          <div class="col-auto">
+            <div class="header-left">
+
+              <div class="header__logo ">
+                <a data-barba href="index.html">
+                  <img src="img/general/my_logo.png" alt="logo" style="height: 50px">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <div class="header-right d-flex items-center">
+              <div class="header-right__buttons d-flex items-center ml-30 md:d-none">
+                <a href="dshb-courses.html" class="button -sm -white text-dark-1 ml-30">My Courses</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="content-wrapper  js-content-wrapper">
+
+      <section class="page-header -type-1">
+        <div class="container">
+          <div class="page-header__content">
+            <div class="row justify-center text-center" style="margin-top:60px">
+              <div class="col-auto">
+                <div data-anim="slide-up delay-1">
+
+                  <h1 class="page-header__title">Shop Order</h1>
+
+                </div>
+
+                <div data-anim="slide-up delay-2">
+
+                  <p class="page-header__text">We’re on a mission to deliver engaging, curated courses at a reasonable price.</p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="layout-pb-lg">
+        <div class="container">
+          <div class="row no-gutters justify-content-center">
+            <div class="col-xl-8 col-lg-9 col-md-11">
+              <div class="shopCompleted-header">
+                <div class="icon">
+                  <i data-feather="check"></i>
+                </div>
+                <h2 class="title">
+                  Your order is completed!
+                </h2>
+                <div class="subtitle">
+                  Thank you. Your order has been received.
+                </div>
+              </div>
+
+              <div class="shopCompleted-info">
+                <div class="row no-gutters y-gap-32">
+                  <div class="col-md-3 col-sm-6">
+                    <div class="shopCompleted-info__item">
+                      <div class="subtitle">Order Number</div>
+                      <div class="title text-purple-1 mt-5">13119</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6">
+                    <div class="shopCompleted-info__item">
+                      <div class="subtitle">Date</div>
+                      <div class="title text-purple-1 mt-5">27/07/2021</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6">
+                    <div class="shopCompleted-info__item">
+                      <div class="subtitle">Total</div>
+                      <div class="title text-purple-1 mt-5">$40.10</div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6">
+                    <div class="shopCompleted-info__item">
+                      <div class="subtitle">Payment Method</div>
+                      <div class="title text-purple-1 mt-5">Direct Bank Transfer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="shopCompleted-footer bg-light-4 border-light rounded-8">
+                <div class="shopCompleted-footer__wrap">
+                  <h5 class="title">
+                    Order details
+                  </h5>
+
+                  <div class="item">
+                    <span class="fw-500">Product</span>
+                    <span class="fw-500">Subtotal</span>
+                  </div>
+
+                  <div class="item">
+                    <span class="">Hoodie x2</span>
+                    <span class="">$59.00</span>
+                  </div>
+
+                  <div class="item -border-none">
+                    <span class="">Seo Books x 1</span>
+                    <span class="">$67.00</span>
+                  </div>
+
+                  <div class="item -border-none">
+                    <span class="fw-500">Subtotal</span>
+                    <span class="fw-500">$178.00</span>
+                  </div>
+
+                  <div class="item">
+                    <span class="fw-500">Shipping</span>
+                    <span class="fw-500">$178.00</span>
+                  </div>
+
+                  <div class="item">
+                    <span class="fw-500">Total</span>
+                    <span class="fw-500">$9,218.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer -type-1 bg-dark-1 -green-links">
+        <div class="container">
+          <div class="footer-header">
+            <div class="row y-gap-20 justify-between items-center">
+              <div class="col-auto">
+                <div class="footer-header__logo">
+                  <img src="img/footer/my_footer-logo.png" alt="logo" style="height: 50px;"
+				  >
+                </div>
+              </div>
+              <div class="col-auto">
+                <div class="footer-header-socials">
+                  <div class="footer-header-socials__title text-white">Follow us on social media</div>
+                  <div class="footer-header-socials__list">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-columns">
+            <div class="row y-gap-30 justify-between">
+              <div class="col-xl-2 col-lg-4 col-md-6">
+                <div class="text-17 fw-500 text-white uppercase mb-25">About</div>
+                <div class="d-flex y-gap-10 flex-column">
+                  <a href="about-2.html">About Us</a>
+                  <a href="contact-2.html">Contact Us</a>
+                  <a href="help-center.html">FAQS</a>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="text-17 fw-500 text-white uppercase mb-25">GET IN TOUCH</div>
+                <div class="footer-columns-form">
+                  <div>We don’t send spam so don’t worry.</div>
+                  <form action="post">
+                    <div class="form-group">
+                      <input type="text" placeholder="Email...">
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-30 border-top-light-15">
+            <div class="row justify-between items-center y-gap-20">
+              <div class="col-auto">
+                <div class="d-flex items-center h-100 text-white">
+                  © 2023 Tu Brothers Academy. All Right Reserved.
+                </div>
+              </div>
+
+              <div class="col-auto">
+                <div class="d-flex x-gap-20 y-gap-20 items-center flex-wrap">
+
+                  <div>
+                    <a href="dashboard.html" class="button px-30 h-50 -dark-6 rounded-200 text-white">
+                      <i class="icon-worldwide text-20 mr-15"></i><span class="text-15">English</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    </div>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
